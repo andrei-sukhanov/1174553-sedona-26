@@ -6,7 +6,7 @@
 <body>
     <header>
         <nav>
-            <a href="#" aria-label="Главная страница">
+            <a href="/index.html" aria-label="Главная страница">
                 <img src="img/logo-sedona.svg" alt="Логотип Sedona" width="140" height="71">
             </a>
             <ul>
@@ -75,7 +75,18 @@
             <h3>Заинтересовались</h3>
             <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостинниц в Седоне</p>
         </section>
-      
+        <form action="" method="POST">
+            <h4>Поиск гостиницы в седоне</h4>
+            <label for="data-visit">Дата Заезда</label>
+            <input type="date" id="data-visit">
+            <label for="data-departure">Дата Выезда</label>
+            <input type="date" id="data-departure">
+            <label for="number-adults">Взрослые</label>
+            <input type="number"step="1" min="1" value="1" id="number-adults">
+            <label for="number-children">Дети</label>
+            <input type="number" step="1" min="0" value="0" id="number-children">
+            <button type="submit">НАЙТИ</button>
+        </form>
     </main>
     <footer>
         <p>#VISITSEDONA</p>
