@@ -2,18 +2,19 @@
 <html lang="ru">
 <head>
     <title>Sedona</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1174553-sedona-26/4/">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/index.html" aria-label="Главная страница">
+            <a href="index.html" aria-label="Главная страница">
                 <img src="img/logo-sedona.svg" alt="Логотип Sedona" width="140" height="71">
             </a>
             <ul>
-                <li><a href="#" aria-label="Информация">Информация</a></li>
-                <li><a href="#" aria-label="Фото и Видео">Фото и Видео</a></li>
-                <li><a href="#" aria-label="Карта штата">Карта штата</a></li>
-                <li><a href="#" aria-label="Гостиницы">Гостиницы</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и Видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
@@ -75,16 +76,16 @@
             <h3>Заинтересовались</h3>
             <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостинниц в Седоне</p>
         </section>
-        <form action="" method="POST">
+        <form action="https://echo.htmlacademy.ru/" method="POST">
             <h4>Поиск гостиницы в седоне</h4>
             <label for="data-visit">Дата Заезда</label>
-            <input type="date" id="data-visit">
+            <input type="text" id="data-visit"data-visit name="data-visit" placeholder="24 АПРЕЛЯ 2017">
             <label for="data-departure">Дата Выезда</label>
-            <input type="date" id="data-departure">
+            <input type="text" id="data-departure" name="data-departure" placeholder="4 ИЮНЯ 2017">
             <label for="number-adults">Взрослые</label>
-            <input type="number"step="1" min="1" value="1" id="number-adults">
+            <input type="number"step="1" min="1" value="1" id="number-adults" name="number-adults">
             <label for="number-children">Дети</label>
-            <input type="number" step="1" min="0" value="0" id="number-children">
+            <input type="number" step="1" min="0" value="0" id="number-children" name="number-children">
             <button type="submit">НАЙТИ</button>
         </form>
     </main>
@@ -97,7 +98,7 @@
                 <li><a href="#" aria-label="YouTube">YouTube</a></li>
             </ul>
         </div>
-        <p><a href="#" aria-label="Страница Разработчика"> Разработанно Html academey</a></p>
+        <p><a href="https://htmlacademy.ru" target="_blank"> Website by <img src="img/logo-htmlacademy.svg" alt="logo htmlacademy" width="115" height="41"> </a></p>
     </footer>
     <section>
         <button type="button"> Закрыть</button>
