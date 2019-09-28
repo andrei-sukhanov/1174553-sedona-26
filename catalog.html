@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <title>Sedona</title>
-  <base href="https://htmlacademy-htmlcss.github.io/1174553-sedona-26/4/">
+    <base href="https://htmlacademy-htmlcss.github.io/1174553-sedona-26/4/">
 </head>
 <body>
     <header>
@@ -20,37 +20,55 @@
     </header>
     <section>
         <form action="https://echo.htmlacademy.ru/" method="GET">
-            <h2>Инфраструктура:</h2>
-            <ul>
-                <input type="checkbox" id="pool" name="pool" value="true" checked>
-                <label for="pool">Бассейн</label>
-                <input type="checkbox" id="parking" name="parking" value="true">
-                <label for="parking">Парковка</label>
-                <input type="checkbox" id="wifi" name="wifi" value="true">
-                <label for="wifi">Wi-Fi</label>
-            </ul>
-            <h2>Тип жилья:</h2>
-            <ul>
-                <input type="checkbox" id="hotel" name="hotel" value="true" checked>
-                <label for="hotel">Гостиница</label>
-                <input type="checkbox" id="motel" name="motel" value="true" checked>
-                <label for="motel">Мотель</label>
-                <input type="checkbox" id="apartments" name="apartments" value="true" checked>
-                <label for="apartaments">Апартаменты</label>
-            </ul>
-        </section>
-        <section>
-            <h2>Стоимость сутки(Р)</h2>
-            <ul>
-                <table>
-                    <tr>
-                        <td>от 0 </td>
-                        <td>до 3000</td>
-                    </tr>
-                </table>
-                <input type="range" name="cost" min="0" max="3000" value="1500">
-                <button type="submit">показать</button>
-            </ul>
+            <fieldset>
+                <legend>Инфраструктура:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="pool" name="comfort" value="pool" checked>
+                        <label for="pool">Бассейн</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="parking" name="comfort" value="parking">
+                        <label for="pool">Парковка</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="wifi" name="comfort" value="wifi">
+                        <label for="wifi">Wi-Fi</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Тип жилья:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="hotel" name="type_of_housing" value="hotel" checked>
+                        <label for="hotel">Гостиница</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="motel" name="type_of_housing" value="motel" checked>
+                        <label for="motel">Мотель</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="apartments" name="type_of_housing" value="apartments" checked>            
+                        <label for="apartaments">Апартаменты</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Стоимость сутки(Р)</legend>
+                <ul>
+                    <li>
+                        <label for="min_cost">от</label><input type="text" id="min_cost" readonly>
+                        <label for="max_cost">до</label><input type="text" id="max_cost" readonly>
+                    </li>
+                    <li>
+                        <input type="range" name="cost" min="0" max="3000" value="1500">
+                    </li>
+                    <li>
+                        <button type="submit">показать</button>
+                    </li>
+                </ul>
+            </fieldset>
         </form>
     </section>
     <section>
@@ -109,7 +127,7 @@
             <li><a href="#" aria-label="YouTube">YouTube</a></li>
         </ul>
         </div>
-        <p><a href="https://htmlacademy.ru" target="_blank"> Website by <img src="img/logo-htmlacademy.svg" alt="logo htmlacademy" width="115" height="41"> </a></p>
+        <p><a href="https://htmlacademy.ru" target="_blank"> Website by <img src="img/logo-htmlacademy.svg" alt="logo htmlacademy" width="115" height="41"> </a></p>        
     </footer>
     <section>
         <button type="button"> Закрыть</button>

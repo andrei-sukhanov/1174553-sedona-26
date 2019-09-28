@@ -1,0 +1,91 @@
+body {
+    font-family: 'PT Sans','Myriad Pro', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+a {
+    font: inherit;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav li {
+    list-style: none;
+}
+
+.banner {
+    height: 773px;
+    width: 1200px;
+
+    background-image: url('../img/header.jpg');
+    background-color: #4c6568;
+    background-repeat: no-repeat;
+}
+
+.slogan {
+    color: #000000;
+    line-height: 26px;
+}
+
+/* Форма */
+.form_order div {
+    height: 86px;
+    width: 568px;
+
+    background-color: #766357;
+}
+
+.form_order h4 {
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.form_order label {
+    font-weight: bold;
+    font-size: 21px;
+    color: #000000;
+}
+
+.form_order input {
+    font: inherit;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.form_order button {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 21px;
+
+    background-color: #81b3d2;
+    border: none;
+}
+
+/* футер */
+
+.hashtag {
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+}
+
+footer li {
+    list-style: none;
+}
+
+.btn_social {
+    background-color: #81b3d2;
+}
+
+.copyright {
+    color: #000000;
+}
+
