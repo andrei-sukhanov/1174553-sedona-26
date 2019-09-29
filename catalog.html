@@ -2,11 +2,11 @@
 <html lang="ru">
 <head>
     <title>Sedona</title>
-    <base href="https://htmlacademy-htmlcss.github.io/1174553-sedona-26/4/">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navigation">
             <a href="index.html" aria-label="Главная страница">
                 <img src="img/logo-sedona.svg" alt="Логотип Sedona" width="140" height="71">
             </a>
@@ -49,7 +49,7 @@
                         <label for="motel">Мотель</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="apartments" name="type_of_housing" value="apartments" checked>            
+                        <input type="checkbox" id="apartments" name="type_of_housing" value="apartments" checked>
                         <label for="apartaments">Апартаменты</label>
                     </li>
                 </ul>
@@ -119,15 +119,16 @@
         </li>
      </ul>
     </section>
-    <footer>
-        <p>#VISITSEDONA</p>
-        <ul>
-            <li><a href="#" aria-label="Twitter">Twitter</a></li>
-            <li><a href="#" aria-label="FaceBook">FaceBook</a></li>
-            <li><a href="#" aria-label="YouTube">YouTube</a></li>
-        </ul>
-        </div>
-        <p><a href="https://htmlacademy.ru" target="_blank"> Website by <img src="img/logo-htmlacademy.svg" alt="logo htmlacademy" width="115" height="41"> </a></p>        
+    <footer class="footer">
+      <p class="hashtag">#VISITSEDONA</p>
+      <div>
+          <ul>
+              <li><a href="#" aria-label="Twitter" class="btn_social"><img src="img/twitter.svg" alt="twitter" width="17" height="15"></a></li>
+              <li><a href="#" aria-label="FaceBook" class="btn_social"><img src="img/fb-icon.svg" alt="FaceBook" width="12" height="22"></a></li>
+              <li><a href="#" aria-label="YouTube" class="btn_social"><img src="img/youtube.svg" alt="YouTube" width="20" height="16"></a></li>
+          </ul>
+      </div>
+      <p><a href="https://htmlacademy.ru" target="_blank" class="copyright"> Website by <img src="img/logo-htmlacademy.svg" alt="logo htmlacademy" width="115" height="41"> </a></p>
     </footer>
     <section>
         <button type="button"> Закрыть</button>

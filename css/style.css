@@ -6,6 +6,22 @@ body {
     text-transform: uppercase;
 }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
     font: inherit;
     font-weight: bold;
@@ -13,11 +29,11 @@ a {
     text-decoration: none;
 }
 
-nav li {
+.navigation li {
     list-style: none;
 }
 
-.banner {
+.poster {
     height: 773px;
     width: 1200px;
 
@@ -77,7 +93,7 @@ nav li {
     color: #000000;
 }
 
-footer li {
+.footer li {
     list-style: none;
 }
 
