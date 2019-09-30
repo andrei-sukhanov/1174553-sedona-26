@@ -38,6 +38,10 @@ a {
     list-style: none;
 }
 
+.navigation .active {
+  color: #766357;
+}
+
 .poster {
     height: 773px;
     width: 1200px;
@@ -110,3 +114,57 @@ a {
     color: #000000;
 }
 
+/* catalog.html */
+
+/* фильтр */
+
+.filter h2 {
+  color: #000000;
+}
+
+.filter p {
+  color: #000000;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.filter_item {
+  list-style: none;
+}
+
+.filter_item a {
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.filter_item .active {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.filter_result li {
+  list-style: none;
+}
+
+.filter_result h3 {
+  color: #000000;
+  font-size: 21px;
+}
+
+.more {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.reservation {
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.rating {
+  background-color: #f2f2f2;
+}

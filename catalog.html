@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <title>Sedona</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +15,7 @@
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и Видео</a></li>
                 <li><a href="#">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
+                <li><a href="catalog.html" class="active">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
@@ -71,50 +72,50 @@
             </fieldset>
         </form>
     </section>
-    <section>
+    <section class="filter">
         <h2>Найдено: <span>3</span> </h2>
-        <p>Сортировка</p>
+        <p>Сортировка:</p>
         <ul>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a> </li>
+            <li class="filter_item"><a href="#" class="active">По цене</a></li>
+            <li class="filter_item"><a href="#">По типу</a></li>
+            <li class="filter_item"><a href="#">По рейтингу</a> </li>
         </ul>
-        <button type="button" aria-label="по убыванию"></button>
-        <button type="button" aria-label="по возрастанию"></button>
+        <a href="#" aria-label="по убыванию"></a>
+        <a href="#" aria-label="по возрастанию"></a>
     </section>
-    <section>
+    <section class="filter_result">
       <ul>
         <li>
             <img src="img/spa_amara.jpg" alt="Спа и ресторан амара" height="90" width="135">
             <h3>Amara resort & spa </h3>
             <p>гостиница от 4000р</p>
-            <a href="#"> подробнее</a>
-            <a href="#"> забронировать</a>
+            <a href="#" class="more"> подробнее</a>
+            <a href="#" class="reservation"> забронировать</a>
             <div>
               <span>7 Звёзды</span>
-              <p>Рейтинг 6</p>
+              <p class="rating">Рейтинг 6</p>
             </div>
         </li>
         <li>
             <img src="img/desert_quail.jpg" alt="Пустыня перепелки" height="90" width="135">
             <h3> Desert Quail inn </h3>
             <p>Мотель от 3000р</p>
-            <a href="#"> подробнее </a>
-            <a href="#"> забронировать </a>
+            <a href="#" class="more"> подробнее</a>
+            <a href="#" class="reservation"> забронировать</a>
             <div>
               <span>3 Звёзды</span>
-              <p>Рейтинг 4.5</p>
+              <p class="rating">Рейтинг 4.5</p>
             </div>
         </li>
         <li>
             <img src="img/villas_at_diablo.jpg" alt="Вилла дьявола" height="90" width="135">
             <h3>Villas at poco diablo</h3>
             <p>Апартаменты от 2000р</p>
-            <a href="#"> подробнее </a>
-            <a href="#"> забронировать </a>
+            <a href="#" class="more"> подробнее</a>
+            <a href="#" class="reservation"> забронировать</a>
             <div>
               <span>4 Звёзды </span>
-              <p>Рейтинг 8.5</p>
+              <p class="rating">Рейтинг 8.5</p>
             </div>
         </li>
      </ul>
