@@ -1,117 +1,134 @@
-html { box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
-    font-family: 'PT Sans','Arial', sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    color: #333333;
-    text-transform: uppercase;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="radio"].visually-hidden,
 input[type="checkbox"].visually-hidden {
-    position: absolute;
+  position: absolute;
 
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 a {
-    font: inherit;
-    font-weight: bold;
-    color: #000000;
-    text-decoration: none;
+  font: inherit;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
 }
 
-.navigation li {
-    list-style: none;
+.navigation {
+  list-style: none;
 }
 
-.navigation .active {
+.active {
   color: #766357;
 }
 
 .poster {
-    height: 773px;
-    width: 1200px;
+  height: 773px;
+  width: 1200px;
 
-    background-image: url('../img/header.jpg');
-    background-color: #4c6568;
-    background-repeat: no-repeat;
+  background-image: url('../img/header.jpg');
+  background-color: #4c6568;
+  background-repeat: no-repeat;
 }
 
 .slogan {
-    color: #000000;
-    line-height: 26px;
+  color: #000000;
+  line-height: 26px;
+}
+
+/* обратная связь */
+
+.callback {
+  font-size: 30px;
+  color: #000000;
 }
 
 /* Форма */
 .form_order div {
-    height: 86px;
-    width: 568px;
+  height: 86px;
+  width: 568px;
 
-    background-color: #766357;
+  background-color: #766357;
 }
 
-.form_order h4 {
-    font-size: 21px;
-    color: #ffffff;
+.title_hotle {
+  font-size: 21px;
+  color: #ffffff;
+
+  border: none;
+  background-color: #766357;
 }
 
-.form_order label {
-    font-weight: bold;
-    font-size: 21px;
-    color: #000000;
+.points {
+  font-weight: bold;
+  font-size: 21px;
+  color: #000000;
 }
 
-.form_order input {
-    font: inherit;
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
+.filling_out {
+  font: inherit;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
 
-    background-color: #f2f2f2;
-    border: none;
+  background-color: #f2f2f2;
+  border: none;
 }
 
-.form_order button {
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 21px;
+.to_find {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 21px;
 
-    background-color: #81b3d2;
-    border: none;
+  background-color: #81b3d2;
+  border: none;
 }
 
 /* футер */
 
 .hashtag {
-    font-size: 21px;
-    font-weight: bold;
-    color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
 }
 
 .footer li {
-    list-style: none;
+  list-style: none;
 }
 
 .btn_social {
-    background-color: #81b3d2;
+  background-color: #81b3d2;
 }
 
 .copyright {
-    color: #000000;
+  color: #000000;
 }
 
 /* catalog.html */

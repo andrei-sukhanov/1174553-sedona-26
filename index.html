@@ -7,15 +7,15 @@
 </head>
 <body>
     <header>
-        <nav class="navigation">
+        <nav>
             <a href="index.html" aria-label="Главная страница">
                 <img src="img/logo-sedona.svg" alt="Логотип Sedona" width="140" height="71">
             </a>
             <ul>
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и Видео</a></li>
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
+                <li class="navigation"><a href="#">Информация</a></li>
+                <li class="navigation"><a href="#">Фото и Видео</a></li>
+                <li class="navigation"><a href="#">Карта штата</a></li>
+                <li class="navigation"><a href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
         <section class="poster">
@@ -77,22 +77,20 @@
               </ol>
         </section>
         <section>
-            <h3>Заинтересовались</h3>
+            <h3 class="callback">Заинтересовались</h3>
             <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостинниц в Седоне</p>
         </section>
-        <form action="https://echo.htmlacademy.ru/" method="POST" class="form_order">
-            <div>
-                <h4>Поиск гостиницы в седоне</h4>
-            </div>
-            <label for="data-visit">Дата Заезда:</label>
-            <input type="text" id="data-visit"data-visit name="data-visit" placeholder="24 АПРЕЛЯ 2017">
-            <label for="data-departure">Дата Выезда:</label>
-            <input type="text" id="data-departure" name="data-departure" placeholder="4 ИЮНЯ 2017">
-            <label for="number-adults">Взрослые:</label>
-            <input type="number"step="1" min="1" value="1" id="number-adults" name="number-adults">
-            <label for="number-children">Дети:</label>
-            <input type="number" step="1" min="0" value="0" id="number-children" name="number-children">
-            <button type="submit">НАЙТИ</button>
+        <button type="button" class="title_hotle">Поиск гостиницы в седоне</button>
+          <form action="https://echo.htmlacademy.ru/" method="POST" class="form_order">
+            <label for="data-visit" class="points">Дата Заезда:</label>
+            <input type="text" id="data-visit"data-visit name="data-visit" placeholder="24 АПРЕЛЯ 2017" class="filling_out">
+            <label for="data-departure" class="points">Дата Выезда:</label>
+            <input type="text" id="data-departure" name="data-departure" placeholder="4 ИЮНЯ 2017" class="filling_out">
+            <label for="number-adults" class="points">Взрослые:</label>
+            <input type="number"step="1" min="1" value="1" id="number-adults" name="number-adults" class="filling_out">
+            <label for="number-children" class="points">Дети:</label>
+            <input type="number" step="1" min="0" value="0" id="number-children" name="number-children" class="filling_out">
+            <button type="submit" class="to_find">НАЙТИ</button>
         </form>
     </main>
     <footer class="footer">
