@@ -1,0 +1,187 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  font: inherit;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation {
+  list-style: none;
+}
+
+.active {
+  color: #766357;
+}
+
+.poster {
+  height: 773px;
+  width: 1200px;
+
+  background-image: url('../img/header.jpg');
+  background-color: #4c6568;
+  background-repeat: no-repeat;
+}
+
+.slogan {
+  color: #000000;
+  line-height: 26px;
+}
+
+/* обратная связь */
+
+.callback {
+  font-size: 30px;
+  color: #000000;
+}
+
+/* Форма */
+.form_order div {
+  height: 86px;
+  width: 568px;
+
+  background-color: #766357;
+}
+
+.title_hotle {
+  font-size: 21px;
+  color: #ffffff;
+
+  border: none;
+  background-color: #766357;
+}
+
+.points {
+  font-weight: bold;
+  font-size: 21px;
+  color: #000000;
+}
+
+.filling_out {
+  font: inherit;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.to_find {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 21px;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+/* футер */
+
+.hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.btn_social {
+  background-color: #81b3d2;
+}
+
+.copyright {
+  color: #000000;
+}
+
+/* catalog.html */
+
+/* фильтр */
+
+.filter h2 {
+  color: #000000;
+}
+
+.filter p {
+  color: #000000;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.filter_item {
+  list-style: none;
+}
+
+.filter_item a {
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.filter_item .active {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.filter_result li {
+  list-style: none;
+}
+
+.filter_result h3 {
+  color: #000000;
+  font-size: 21px;
+}
+
+.more {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.reservation {
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.rating {
+  background-color: #f2f2f2;
+}

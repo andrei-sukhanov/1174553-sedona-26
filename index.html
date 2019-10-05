@@ -2,26 +2,31 @@
 <html lang="ru">
 <head>
     <title>Sedona</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <a>
-          <img src="img/....." alt="Логотип Sedona">
-          </a>
+            <a href="index.html" aria-label="Главная страница">
+                <img src="img/logo-sedona.svg" alt="Логотип Sedona" width="140" height="71">
+            </a>
             <ul>
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и Видео</a></li>
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="#">Гостиницы</a></li>
+                <li class="navigation"><a href="#">Информация</a></li>
+                <li class="navigation"><a href="#">Фото и Видео</a></li>
+                <li class="navigation"><a href="#">Карта штата</a></li>
+                <li class="navigation"><a href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
+        <section class="poster">
+            <img src="img/intro-welcome.svg" alt="welcome" width="459" height="353">
+        </section>
     </header>
     <main>
             <h1> Sedona </h1>
             <section>
               <div>
-                  <h2>Седона - небольшой городок в аризоне, <br>заслуживающий большого!</h2>
+                  <h2 class="slogan">Седона - небольшой городок в аризоне, <br>заслуживающий большого!</h2>
                   <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон</p>
               </div>
 
@@ -59,7 +64,7 @@
                             <span>-№3-</span>
                             <p>Все достопремичательства находятся очень близко</p>
                         </li>
-                        </li>
+                        <li>
                             <h3>Красивая дорога</h3>
                             <span>-#4-</span>
                             <p>Ехать в Седону из лас-вегаса совсем <br>не скучно</p>
@@ -72,21 +77,32 @@
               </ol>
         </section>
         <section>
-            <h3>Заинтересовались</h3>
+            <h3 class="callback">Заинтересовались</h3>
             <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостинниц в Седоне</p>
         </section>
-        <!-- нужно сделать бланк заполнения (форма)-->
+        <button type="button" class="title_hotle">Поиск гостиницы в седоне</button>
+          <form action="https://echo.htmlacademy.ru/" method="POST" class="form_order">
+            <label for="data-visit" class="points">Дата Заезда:</label>
+            <input type="text" id="data-visit"data-visit name="data-visit" placeholder="24 АПРЕЛЯ 2017" class="filling_out">
+            <label for="data-departure" class="points">Дата Выезда:</label>
+            <input type="text" id="data-departure" name="data-departure" placeholder="4 ИЮНЯ 2017" class="filling_out">
+            <label for="number-adults" class="points">Взрослые:</label>
+            <input type="number"step="1" min="1" value="1" id="number-adults" name="number-adults" class="filling_out">
+            <label for="number-children" class="points">Дети:</label>
+            <input type="number" step="1" min="0" value="0" id="number-children" name="number-children" class="filling_out">
+            <button type="submit" class="to_find">НАЙТИ</button>
+        </form>
     </main>
-    <footer>
-        <p>#VISITSEDONA</p>
+    <footer class="footer">
+        <p class="hashtag">#VISITSEDONA</p>
         <div>
             <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">FaceBook</a></li>
-                <li><a href="#">YouTube</a></li>
+                <li><a href="#" aria-label="Twitter" class="btn_social"><img src="img/twitter.svg" alt="twitter" width="17" height="15"></a></li>
+                <li><a href="#" aria-label="FaceBook" class="btn_social"><img src="img/fb-icon.svg" alt="FaceBook" width="12" height="22"></a></li>
+                <li><a href="#" aria-label="YouTube" class="btn_social"><img src="img/youtube.svg" alt="YouTube" width="20" height="16"></a></li>
             </ul>
         </div>
-        <p><a href="#"> Разработанно Html academey</a></p>
+        <p><a href="https://htmlacademy.ru" target="_blank" class="copyright"> Website by <img src="img/logo-htmlacademy.svg" alt="logo htmlacademy" width="115" height="41"> </a></p>
     </footer>
     <section>
         <button type="button"> Закрыть</button>
