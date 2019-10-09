@@ -37,8 +37,55 @@ input[type="checkbox"].visually-hidden {
 a {
   font: inherit;
   font-weight: bold;
-  color: #000000;
   text-decoration: none;
+  color: #000000;
+}
+
+.label {
+  color: #000000;
+}
+
+.label:hover {
+  color: #81b3d2;
+}
+
+.label:active {
+  color: #e5e5e5;
+}
+
+/* синяя кнопка */
+
+.btn_blue {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.btn_blue:hover {
+  background-color: #669ec0;
+}
+
+.btn_blue:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* коричневая кнопка */
+
+.btn_brown {
+  font-size: 21px;
+  color: #ffffff;
+
+  border: none;
+  background-color: #766357;
+}
+
+.btn_brown:hover {
+  background-color: #604e43;
+}
+
+.btn_brown:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .navigation {
@@ -58,18 +105,14 @@ a {
   color: #000000;
 }
 
-.special_places {
-  color: #ffffff;
-}
-
 .block_blue {
   color: #ffffff;
 
   background-color: #81b3d2;
 }
 
-.special_places_title {
-  font-size: 21px;
+.block_blue .feature_title{
+  color: #ffffff;
 }
 
 .poster {
@@ -101,22 +144,6 @@ a {
   background-color: #766357;
 }
 
-.button_hotle {
-  font-size: 21px;
-  color: #ffffff;
-
-  border: none;
-  background-color: #766357;
-}
-
-.button_hotle:hover {
-  background-color: #786f69;
-}
-
-.button_hotle:active {
-  background-color: #745642;
-}
-
 .points {
   font-weight: bold;
   font-size: 21px;
@@ -133,12 +160,10 @@ a {
   border: none;
 }
 
-.to_find {
+.btn_blue.find {
   font-weight: bold;
-  color: #ffffff;
   font-size: 21px;
 
-  background-color: #81b3d2;
   border: none;
 }
 
@@ -163,23 +188,36 @@ a {
   list-style: none;
 }
 
-.btn_social {
-  background-color: #81b3d2;
-}
-
-.btn_social:hover {
-  background-color: #9dbed2;
-}
-
-.btn_social:active {
-  background-color: #469dd3;
-}
-
 .copyright {
   color: #000000;
 }
 
 /* catalog.html */
+
+/* форма поиска */
+
+.form_search {
+  background-image: url(../img/header.jpg);
+}
+
+.form_search li {
+  list-style: none;
+}
+
+.btn_show {
+  font-size: 14px;
+  color: #fff;
+
+  background: none;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.btn_show:hover {
+  color: #000000;
+
+  background-color: #ffffff;
+}
 
 /* фильтр */
 
@@ -197,14 +235,24 @@ a {
   list-style: none;
 }
 
-.filter_item a {
+.filter_lable {
   color: #cacaca;
   border-bottom: 1px dotted #81b3d2;
   font-weight: 400;
   font-size: 12px;
 }
 
-.filter_item .active {
+.filter_lable:hover {
+  color: #81b3d2;
+}
+
+.filter_lable:active {
+  color: #000000;
+
+  border: none;
+}
+
+.filter_lable.active {
   color: #81b3d2;
   border-bottom: none;
 }
@@ -213,8 +261,7 @@ a {
   list-style: none;
 }
 
-.filter_result h3 {
-  color: #000000;
+.filter_result .label {
   font-size: 21px;
 }
 
@@ -224,10 +271,9 @@ a {
   background-color: #81b3d2;
 }
 
-.reservation {
-  color: #ffffff;
-
-  background-color: #766357;
+.btn_brown.reservation {
+  font: inherit;
+  font-weight: bold;
 }
 
 .rating {
