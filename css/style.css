@@ -49,6 +49,29 @@ a {
   color: #766357;
 }
 
+.atribut {
+  list-style: none;
+}
+
+.feature_title {
+  font-size: 21px;
+  color: #000000;
+}
+
+.special_places {
+  color: #ffffff;
+}
+
+.block_blue {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.special_places_title {
+  font-size: 21px;
+}
+
 .poster {
   height: 773px;
   width: 1200px;
@@ -78,12 +101,20 @@ a {
   background-color: #766357;
 }
 
-.title_hotle {
+.button_hotle {
   font-size: 21px;
   color: #ffffff;
 
   border: none;
   background-color: #766357;
+}
+
+.button_hotle:hover {
+  background-color: #786f69;
+}
+
+.button_hotle:active {
+  background-color: #745642;
 }
 
 .points {
@@ -111,6 +142,15 @@ a {
   border: none;
 }
 
+.to_find:hover {
+  background-color: #9dbed2;
+}
+
+.to_find:active {
+  background-color: #469dd3;
+}
+
+
 /* футер */
 
 .hashtag {
@@ -125,6 +165,14 @@ a {
 
 .btn_social {
   background-color: #81b3d2;
+}
+
+.btn_social:hover {
+  background-color: #9dbed2;
+}
+
+.btn_social:active {
+  background-color: #469dd3;
 }
 
 .copyright {
