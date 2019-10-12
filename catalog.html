@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
     <title>Sedona</title>
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
     </header>
     <section>
         <form action="https://echo.htmlacademy.ru/" method="GET" class="form_search">
-            <fieldset>
+            <fieldset class="input_group">
                 <legend class="title_input">Инфраструктура:</legend>
                 <ul>
                     <li>
@@ -30,7 +31,7 @@
                     </li>
                     <li>
                         <input type="checkbox" id="parking" name="comfort" value="parking">
-                        <label for="pool" class="label_input">Парковка</label>
+                        <label for="parking" class="label_input">Парковка</label>
                     </li>
                     <li>
                         <input type="checkbox" id="wifi" name="comfort" value="wifi">
@@ -38,7 +39,7 @@
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="input_group">
                 <legend class="title_input">Тип жилья:</legend>
                 <ul>
                     <li>
@@ -50,12 +51,12 @@
                         <label for="motel" class="label_input">Мотель</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="apartments" name="type_of_housing" value="apartments" checked>
+                        <input type="checkbox" id="apartaments" name="type_of_housing" value="apartaments" checked>
                         <label for="apartaments" class="label_input">Апартаменты</label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="input_group">
                 <legend class="title_input">Стоимость сутки(Р)</legend>
                 <ul>
                     <li>
