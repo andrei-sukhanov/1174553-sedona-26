@@ -8,15 +8,17 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navigation container">
             <a href="index.html" aria-label="Главная страница">
                 <img src="img/logo-sedona.svg" alt="Логотип Sedona" width="140" height="71">
             </a>
+            <ul class="row_1">
+                <li class="navigation_item"><a href="#" class="label">Информация</a></li>
+                <li class="navigation_item"><a href="#" class="label">Фото и Видео</a></li>
+            </ul>
             <ul>
-                <li class="navigation"><a href="#" class="label">Информация</a></li>
-                <li class="navigation"><a href="#" class="label">Фото и Видео</a></li>
-                <li class="navigation"><a href="#" class="label">Карта штата</a></li>
-                <li class="navigation"><a href="catalog.html" class="label">Гостиницы</a></li>
+                <li class="navigation_item"><a href="#" class="label">Карта штата</a></li>
+                <li class="navigation_item"><a href="catalog.html" class="label">Гостиницы</a></li>
             </ul>
         </nav>
         <section class="poster">
@@ -26,34 +28,41 @@
     <main>
             <h1 class="visually-hidden"> Sedona </h1>
             <section>
-              <div>
+              <div class="slogan_wrapper">
                   <h2 class="slogan">Седона - небольшой городок в аризоне, <br>заслуживающий большого!</h2>
                   <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон</p>
               </div>
 
-              <ol>
+              <ol class="feature">
                     <li class="atribut">
-                      <div class="block_blue">
-                        <h3 class="feature_title">Настоящий <br>городок </h3>
-                        <span>-№-1-</span>
-                        <p>Седона - не атракцион для туристов,<br>там течет своя жизнь</p>
-                      </div>
-                        <img src="img/truetown.jpg" alt="Городок Седона" height="256" width="800">
-                        <ul>
-                            <li class="atribut">
-                                <h3 class="feature_title">Жильё</h3>
-                                <p>Рекомендуем по жить в настоящем <br>мотелле, всё как в кино!</p>
-                            </li>
+                        <div class="atribut_row">
+                            <div class="block_blue">
+                                <h3 class="feature_title">Настоящий <br>городок </h3>
+                                <span>-№-1-</span>
+                                <p>Седона - не атракцион для туристов,<br>там течет своя жизнь</p>
+                            </div>
+                            <div class="bg_image_1"></div>
+                        </div>
+                        <div class="container">
+                            <ul class="feature_list">
+                                <li class="atribut">
+                                    <img src="img/icon-1.svg" alt="Дом" height="72" width="75">
+                                    <h3 class="feature_title">Жильё</h3>
+                                    <p>Рекомендуем по жить в настоящем <br>мотелле, всё как в кино!</p>
+                                </li>
 
-                            <li class="atribut">
-                                <h3 class="feature_title">Еда</h3>
-                                <p>Всегда заказывайте фирменный бургер,<br>не разочеруетесь!</p>
-                            </li>
-                            <li class="atribut">
-                                <h3 class="feature_title">Сувениры</h3>
-                                <p>Не только китайского, но и местного <br>производства!</p>
-                            </li>
-                        </ul>
+                                <li class="atribut">
+                                    <img src="img/icon-2.svg" alt="Подарок" height="76" width="64">
+                                    <h3 class="feature_title">Еда</h3>
+                                    <p>Всегда заказывайте фирменный бургер,<br>не разочеруетесь!</p>
+                                </li>
+                                <li class="atribut">
+                                    <img src="img/icon-3.svg" alt="Бургер" height="70" width="74">
+                                    <h3 class="feature_title">Сувениры</h3>
+                                    <p>Не только китайского, но и местного <br>производства!</p>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                         <li class="atribut">
                             <img src="img/diablo.jpg" alt="Мост Дьявола" height="256" width="800">

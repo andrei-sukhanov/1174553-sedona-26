@@ -20,6 +20,11 @@ body {
   border: none;
 }
 
+.container {
+  width: 1056px;
+  margin: auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="radio"].visually-hidden,
 input[type="checkbox"].visually-hidden {
@@ -94,6 +99,16 @@ a {
 }
 
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.row_1 {
+  order: -1;
+}
+
+.navigation_item {
   list-style: none;
 }
 
@@ -101,8 +116,16 @@ a {
   color: #766357;
 }
 
+.feature {
+  padding: 0;
+}
+
 .atribut {
   list-style: none;
+}
+
+.atribut_row {
+  display: flex;
 }
 
 .feature_title {
@@ -112,6 +135,13 @@ a {
 
 .block_blue {
   color: #ffffff;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  height: 256px;
 
   background-color: #81b3d2;
 }
@@ -120,18 +150,53 @@ a {
   color: #ffffff;
 }
 
-.poster {
-  height: 773px;
-  width: 1200px;
+.bg_image_1 {
+  flex-grow: 1;
+  height: 256px;
 
+  background-size: cover;
+  background-image: url(../img/truetown.jpg);
+}
+
+.feature_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 330px;
+  width: 100%;
+}
+
+.feature_list .atribut {
+  text-align: center;
+}
+
+.poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 508px;
+  width: 100%;
+
+  background-size: cover;
+  background-position: top;
   background-image: url('../img/header.jpg');
   background-color: #4c6568;
   background-repeat: no-repeat;
 }
 
+.slogan_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 215px;
+}
+
 .slogan {
   color: #000000;
   line-height: 26px;
+  text-align: center;
 }
 
 /* обратная связь */
