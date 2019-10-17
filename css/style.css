@@ -15,6 +15,7 @@ body {
   color: #333333;
   text-transform: uppercase;
   min-width: 1200px;
+  background-color: #f2f2f2;
 }
 
 .input_group {
@@ -24,7 +25,13 @@ body {
 .container {
   width: 1200px;
   margin: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1)
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+}
+
+.inner_container {
+  width: 1054px;
+  margin: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -100,17 +107,21 @@ a {
   color: rgba(255, 255, 255, 0.3)
 }
 
-.navigation {
+.navigation .inner_container {
   display: flex;
   justify-content: space-between;
   height: 56px;
 }
 
-.row_2 {
-  margin-right: 73px;
+.row_1 {
+  padding: 0px;
 }
 
-.logotip {
+.row_2 {
+  padding: 0px;
+}
+
+.logo {
   position: absolute;
   left: 50%;
   margin-left: -70px;
@@ -159,32 +170,20 @@ a {
   color: #ffffff;
 }
 
-.bg_image_1 {
-  flex-grow: 1;
-  height: 256px;
-
-  background-size: cover;
-  background-image: url(../img/truetown.jpg);
-}
-
-.bg_image_2 {
-  flex-grow: 1;
-  height: 256px;
-
-  background-size: cover;
-  background-image: url(../img/diablo.jpg);
-}
-
 .atribut_row1 {
   display: flex;
 }
 
-.feature_list {
+.feature_list .inner_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px;
   height: 330px;
-  width: 100%;
+}
+
+.bg_grey {
+  background-color: #eeeeee;
 }
 
 .feature_list .atribut {
@@ -221,18 +220,56 @@ a {
 }
 
 /* обратная связь */
-
 .callback {
+  text-align: center;
+
+  padding-top: 58px;
+  height: 292px;
+}
+
+.callback_title {
   font-size: 30px;
   color: #000000;
+  margin: 0px;
 }
 
 /* Форма */
-.form_order div {
-  height: 86px;
-  width: 568px;
+.order_hotel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  height: 476px;
 
-  background-color: #766357;
+  background-image: url(../img/map.jpg);
+}
+
+.order_wrapper {
+  position: absolute;
+  margin-top: -86px;
+}
+
+.form_order {
+  display: flex;
+  flex-direction: column;
+  width: 568px;
+  height: 395px;
+
+  background-color: #ffffff;
+}
+
+.input_group_order {
+  border: 0;
+
+  margin-bottom: 37px;
+  margin-left: 55px;
+  margin-right: 60px;
+}
+
+.input_data {
+  width: 346px;
+  height: 40px;
 }
 
 .points {
@@ -254,6 +291,16 @@ a {
   font: inherit;
   font-size: 21px;
   font-weight: bold;
+
+  width: 568px;
+  height: 86px;
+}
+
+.find {
+  width: 450px;
+  height: 69px;
+  padding: 0px;
+  margin: auto;
 }
 
 .btn_blue.find {
@@ -273,6 +320,13 @@ a {
 
 
 /* футер */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 130px;
+  margin-right: 100px;
+  margin-top: 10px;
+}
 
 .hashtag {
   font-size: 21px;
