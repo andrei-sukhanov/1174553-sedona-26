@@ -14,6 +14,7 @@ body {
   line-height: 21px;
   color: #333333;
   text-transform: uppercase;
+  min-width: 1200px;
 }
 
 .input_group {
@@ -21,8 +22,9 @@ body {
 }
 
 .container {
-  width: 1056px;
+  width: 1200px;
   margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1)
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -104,8 +106,14 @@ a {
   height: 56px;
 }
 
-.row_1 {
-  order: -1;
+.row_2 {
+  margin-right: 73px;
+}
+
+.logotip {
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
 }
 
 .navigation_item {
@@ -127,6 +135,7 @@ a {
 .atribut_row {
   display: flex;
 }
+
 
 .feature_title {
   font-size: 21px;
@@ -156,6 +165,18 @@ a {
 
   background-size: cover;
   background-image: url(../img/truetown.jpg);
+}
+
+.bg_image_2 {
+  flex-grow: 1;
+  height: 256px;
+
+  background-size: cover;
+  background-image: url(../img/diablo.jpg);
+}
+
+.atribut_row1 {
+  display: flex;
 }
 
 .feature_list {
