@@ -255,6 +255,7 @@ a {
   flex-direction: column;
   width: 568px;
   height: 395px;
+  padding-top: 56px;
 
   background-color: #ffffff;
 }
@@ -262,14 +263,20 @@ a {
 .input_group_order {
   border: 0;
 
-  margin-bottom: 37px;
-  margin-left: 55px;
-  margin-right: 55px;
+  padding-bottom: 30px;
+  padding-left: 55px;
+
 }
+
+/*.firer {
+  margin-top: 66px;
+}*/
 
 .input_data {
   width: 346px;
   height: 40px;
+
+  padding-left: 35px;
 }
 
 .points {
@@ -301,6 +308,7 @@ a {
   height: 69px;
   padding: 0px;
   margin: auto;
+  margin-bottom: 55px;
 }
 
 .btn_blue.find {
