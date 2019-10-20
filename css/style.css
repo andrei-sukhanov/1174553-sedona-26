@@ -342,6 +342,10 @@ a {
   color: #000000;
 }
 
+.interesting_pages {
+  padding: 0px;
+}
+
 .footer li {
   list-style: none;
 }
@@ -355,7 +359,16 @@ a {
 /* форма поиска */
 
 .form_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 219px;
+  width: 100%;
+
+  background-size: cover;
+  background-position: top;
   background-image: url(../img/header_blur.jpg);
+  background-color: #4c6568;
   background-repeat: no-repeat;
 }
 
@@ -390,6 +403,10 @@ a {
 }
 
 /* фильтр */
+.filter {
+  display: flex;
+
+}
 
 .filter h2 {
   color: #000000;
