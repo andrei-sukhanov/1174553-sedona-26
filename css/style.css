@@ -23,8 +23,11 @@ body {
 }
 
 .container {
+  position: relative;
+
   width: 1200px;
   margin: auto;
+  
   background-color: #ffffff;
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
@@ -173,6 +176,9 @@ a {
 .atribut_row1 {
   display: flex;
 }
+.feature_list {
+  padding: 0px;
+}
 
 .feature_list .inner_container {
   display: flex;
@@ -255,7 +261,8 @@ a {
   flex-direction: column;
   width: 568px;
   height: 395px;
-  padding-top: 56px;
+  align-items: center;
+  padding-top: 55px;
 
   background-color: #ffffff;
 }
@@ -263,20 +270,21 @@ a {
 .input_group_order {
   border: 0;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 458px;
   padding-bottom: 30px;
-  padding-left: 55px;
-
 }
-
-/*.firer {
-  margin-top: 66px;
-}*/
 
 .input_data {
   width: 346px;
-  height: 40px;
+  height: 38px;
+}
 
-  padding-left: 35px;
+.namber {
+  width: 114px;
+  height: 38px;
 }
 
 .points {
@@ -304,11 +312,10 @@ a {
 }
 
 .find {
-  width: 450px;
-  height: 69px;
+  width: 458px;
+  height: 58px;
   padding: 0px;
-  margin: auto;
-  margin-bottom: 55px;
+  margin-top: 25px;
 }
 
 .btn_blue.find {
@@ -329,11 +336,14 @@ a {
 
 /* футер */
 .footer {
+  width: 1200px;
+}
+
+.footer .inner_container {
   display: flex;
   justify-content: space-between;
-  margin-left: 130px;
-  margin-right: 100px;
-  margin-top: 10px;
+  align-items: center;
+  height: 120px;
 }
 
 .hashtag {
@@ -343,14 +353,29 @@ a {
 }
 
 .interesting_pages {
+  display: flex;
+  justify-content: space-between;
   padding: 0px;
+  width: 150px;
 }
 
+.interesting_pages .btn_blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+}
 .footer li {
   list-style: none;
 }
 
 .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+
   color: #000000;
 }
 
