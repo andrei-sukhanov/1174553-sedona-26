@@ -10,64 +10,63 @@
     <div class="container">
     <header>
         <nav class="navigation">
-          <div class="inner_container">
             <div class="logo">
             <a href="index.html" aria-label="Главная страница">
                 <img src="img/logo-sedona.svg" alt="Логотип Sedona" width="140" height="71">
             </a>
             </div>
-            <ul>
+            <ul class="row_1">
                 <li class="navigation_item"><a href="#" class="label">Информация</a></li>
                 <li class="navigation_item"><a href="#" class="label">Фото и Видео</a></li>
             </ul>
-            <ul>
+            <ul class="row_2">
                 <li class="navigation_item"><a href="#" class="label">Карта штата</a></li>
                 <li class="navigation_item"><a href="catalog.html" class="active">Гостиницы</a></li>
             </ul>
-          </div>
         </nav>
     </header>
-    <div>
     <section>
         <form action="https://echo.htmlacademy.ru/" method="GET" class="form_search">
-            <fieldset class="input_group">
-                <legend class="title_input">Инфраструктура:</legend>
-                <ul>
-                    <li>
-                        <input type="checkbox" id="pool" name="comfort" value="pool" checked>
-                        <label for="pool" class="label_input">Бассейн</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="parking" name="comfort" value="parking">
-                        <label for="parking" class="label_input">Парковка</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="wifi" name="comfort" value="wifi">
-                        <label for="wifi" class="label_input">Wi-Fi</label>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset class="input_group">
-                <legend class="title_input">Тип жилья:</legend>
-                <ul>
-                    <li>
-                        <input type="checkbox" id="hotel" name="type_of_housing" value="hotel" checked>
-                        <label for="hotel" class="label_input">Гостиница</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="motel" name="type_of_housing" value="motel" checked>
-                        <label for="motel" class="label_input">Мотель</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="apartaments" name="type_of_housing" value="apartaments" checked>
-                        <label for="apartaments" class="label_input">Апартаменты</label>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset class="input_group">
-                <legend class="title_input">Стоимость сутки(Р)</legend>
-                <ul>
-                    <li>
+              <div class="block_cheskbox">
+                <fieldset class="input_group">
+                    <legend class="title_input">Инфраструктура:</legend>
+                    <ul class="list_search">
+                        <li class="input_search">
+                            <input type="checkbox" id="pool" name="comfort" value="pool" checked>
+                            <label for="pool" class="label_input">Бассейн</label>
+                        </li>
+                        <li class="input_search">
+                            <input type="checkbox" id="parking" name="comfort" value="parking">
+                            <label for="parking" class="label_input">Парковка</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="wifi" name="comfort" value="wifi">
+                            <label for="wifi" class="label_input">Wi-Fi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="input_group">
+                    <legend class="title_input">Тип жилья:</legend>
+                    <ul class="list_search">
+                        <li class="input_search">
+                            <input type="checkbox" id="hotel" name="type_of_housing" value="hotel" checked>
+                            <label for="hotel" class="label_input">Гостиница</label>
+                        </li>
+                        <li class="input_search">
+                            <input type="checkbox" id="motel" name="type_of_housing" value="motel" checked>
+                            <label for="motel" class="label_input">Мотель</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="apartaments" name="type_of_housing" value="apartaments" checked>
+                            <label for="apartaments" class="label_input">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <fieldset class="input_group cost">
+                <legend class="title_input title_cost">Стоимость сутки(Р)</legend>
+                <ul class="list_search">
+                    <li class="input_cost">
                         <label for="min_cost" class="label_input">от</label><input type="text" id="min_cost" readonly>
                         <label for="max_cost" class="label_input">до</label><input type="text" id="max_cost" readonly>
                     </li>
@@ -81,7 +80,6 @@
             </fieldset>
         </form>
     </section>
-    </div>
     <section class="filter">
         <h2>Найдено: <span>3</span> </h2>
         <p>Сортировка:</p>
@@ -90,8 +88,10 @@
             <li class="filter_item"><a href="#" class="filter_lable">По типу</a></li>
             <li class="filter_item"><a href="#" class="filter_lable">По рейтингу</a> </li>
         </ul>
-        <a href="#" aria-label="по убыванию"></a>
-        <a href="#" aria-label="по возрастанию"></a>
+        <ul>
+            <li class="filter_item"><a href="#" aria-label="по убыванию"></a></li>
+            <li class="filter_item"><a href="#" aria-label="по возрастанию"></a></li>
+        </ul>
     </section>
     <section class="filter_result">
       <ul>
@@ -131,16 +131,14 @@
      </ul>
     </section>
     <footer class="footer">
-        <div class="inner_container">
-            <p class="hashtag">#VISITSEDONA</p>
-            <ul class="interesting_pages">
-                <li><a href="#" aria-label="Twitter" class="btn_blue"><img src="img/twitter.svg" alt="twitter" width="17" height="15"></a></li>
-                <li><a href="#" aria-label="FaceBook" class="btn_blue"><img src="img/fb-icon.svg" alt="FaceBook" width="12" height="22"></a></li>
-                <li><a href="#" aria-label="YouTube" class="btn_blue"><img src="img/youtube.svg" alt="YouTube" width="20" height="16"></a></li>
-            </ul>
-            <p><a href="https://htmlacademy.ru" target="_blank" class="copyright"> Website by <img src="img/logo-htmlacademy.svg" alt="logo htmlacademy" width="115" height="41"> </a></p>
-        </div>
+        <p class="hashtag">#VISITSEDONA</p>
+        <ul class="interesting_pages">
+            <li><a href="#" aria-label="Twitter" class="btn_blue"><img src="img/twitter.svg" alt="twitter" width="17" height="15"></a></li>
+            <li><a href="#" aria-label="FaceBook" class="btn_blue"><img src="img/fb-icon.svg" alt="FaceBook" width="12" height="22"></a></li>
+            <li><a href="#" aria-label="YouTube" class="btn_blue"><img src="img/youtube.svg" alt="YouTube" width="20" height="16"></a></li>
+        </ul>
+        <p><a href="https://htmlacademy.ru" target="_blank" class="copyright"> Website by <img src="img/logo-htmlacademy.svg" alt="logo htmlacademy" width="115" height="41"> </a></p>
     </footer>
-  </div>
+    </div>
 </body>
 </html>

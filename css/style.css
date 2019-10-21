@@ -18,8 +18,20 @@ body {
   background-color: #f2f2f2;
 }
 
+.block_cheskbox {
+  display: flex;
+  /* доделать утром !! */
+}
+
 .input_group {
   border: none;
+  padding: 0px;
+  margin: 0px;
+  height: 160px;
+}
+
+.input_group.cost {
+  position: relative;
 }
 
 .container {
@@ -27,14 +39,9 @@ body {
 
   width: 1200px;
   margin: auto;
-  
+
   background-color: #ffffff;
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
-}
-
-.inner_container {
-  width: 1054px;
-  margin: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -110,10 +117,12 @@ a {
   color: rgba(255, 255, 255, 0.3)
 }
 
-.navigation .inner_container {
+.navigation {
   display: flex;
   justify-content: space-between;
   height: 56px;
+  padding-right: 73px;
+  padding-left: 73px;
 }
 
 .row_1 {
@@ -176,15 +185,13 @@ a {
 .atribut_row1 {
   display: flex;
 }
-.feature_list {
-  padding: 0px;
-}
 
-.feature_list .inner_container {
+.feature_list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding-left: 73px;
+  padding-right: 73px;
   height: 330px;
 }
 
@@ -226,7 +233,7 @@ a {
 }
 
 /* обратная связь */
-.callback {
+.callback_wraper {
   text-align: center;
 
   padding-top: 58px;
@@ -240,7 +247,7 @@ a {
 }
 
 /* Форма */
-.order_hotel {
+.order_wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -251,7 +258,7 @@ a {
   background-image: url(../img/map.jpg);
 }
 
-.order_wrapper {
+.order_hotel {
   position: absolute;
   margin-top: -86px;
 }
@@ -335,15 +342,15 @@ a {
 
 
 /* футер */
-.footer {
-  width: 1200px;
-}
 
-.footer .inner_container {
+.footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 120px;
+  width: 1200px;
+  padding-right: 73px;
+  padding-left: 73px;
 }
 
 .hashtag {
@@ -389,6 +396,8 @@ a {
   justify-content: space-between;
   height: 219px;
   width: 100%;
+  padding-right: 73px;
+  padding-left: 73px;
 
   background-size: cover;
   background-position: top;
@@ -402,9 +411,28 @@ a {
 }
 
 .title_input {
+  padding-bottom: 30px;
+
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
+}
+
+.title_cost {
+  padding-bottom: 15px;
+}
+
+.list_search {
+  padding: 0px;
+  margin: 0px;
+}
+
+.input_search {
+  padding-bottom: 23px;
+}
+
+.input_cost {
+  padding-bottom: 15px;
 }
 
 .label_input {
@@ -413,6 +441,13 @@ a {
 }
 
 .btn_show {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -66px;
+  width: 132px;
+  height: 32px;
+
   font-size: 14px;
   color: #fff;
 
