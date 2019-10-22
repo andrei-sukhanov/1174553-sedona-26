@@ -20,7 +20,8 @@ body {
 
 .block_cheskbox {
   display: flex;
-  /* доделать утром !! */
+  justify-content: space-between;
+  width: 390px;
 }
 
 .input_group {
