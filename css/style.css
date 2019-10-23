@@ -21,7 +21,7 @@ body {
 .block_cheskbox {
   display: flex;
   justify-content: space-between;
-  width: 390px;
+  width: 365px;
 }
 
 .input_group {
@@ -126,12 +126,17 @@ a {
   padding-left: 73px;
 }
 
-.row_1 {
+.navigation_list {
+  display: flex;
   padding: 0px;
 }
 
-.row_2 {
-  padding: 0px;
+.navigation_item {
+  width: 263px;
+}
+
+.navigation_item:nth-child(n + 3) {
+  text-align: right;
 }
 
 .logo {
@@ -290,6 +295,13 @@ a {
   height: 38px;
 }
 
+.input_data::after {
+  content: "";
+  background-image: url(../img/calendar.svg);
+  width: 21px;
+  height: 22px;
+}
+
 .namber {
   width: 114px;
   height: 38px;
@@ -350,8 +362,13 @@ a {
   align-items: center;
   height: 120px;
   width: 1200px;
-  padding-right: 73px;
-  padding-left: 73px;
+}
+
+.footer > * {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+
 }
 
 .hashtag {
@@ -365,6 +382,7 @@ a {
   justify-content: space-between;
   padding: 0px;
   width: 150px;
+  margin-right: -34px;
 }
 
 .interesting_pages .btn_blue {
@@ -374,6 +392,11 @@ a {
   width: 46px;
   height: 48px;
 }
+
+.btn_blue:active svg{
+  opacity: 0.3;
+}
+
 .footer li {
   list-style: none;
 }
@@ -387,6 +410,16 @@ a {
   color: #000000;
 }
 
+.copyright:hover svg,
+.copyright:hover path{
+  fill: #81b3d2;
+}
+
+.copyright:active svg,
+.copyright:active path {
+ fill: #bdbbbc;
+}
+
 /* catalog.html */
 
 /* форма поиска */
@@ -395,7 +428,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 219px;
+  height: 218px;
   width: 100%;
   padding-right: 73px;
   padding-left: 73px;
@@ -486,7 +519,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  width: 528px;
+  width: 516px;
 }
 
 .list_filter {
@@ -495,8 +528,12 @@ a {
   padding: 0;
 }
 
+.list_filter .active svg,
+.list_filter .active path {
+  fill: #81b3d2;
+}
 .type_padding {
-  padding-right: 15px;
+  padding-right: 33px;
 }
 
 .arrow_padding {
@@ -506,6 +543,23 @@ a {
 .filter_item {
   list-style: none;
 }
+
+
+.filter_item svg,
+.filter_item path {
+  fill: #cacaca;
+}
+
+.filter_item:hover svg,
+.filter_item:hover path {
+  fill: #231f20;
+}
+
+.filter_item:active svg,
+.filter_item:active path{
+  fill: #81b3d2;
+}
+
 
 .filter_lable {
   color: #cacaca;
@@ -541,7 +595,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: 0px;
-  margin: 0px;
+  margin: 0;
 }
 
 .item_hotel {
@@ -549,7 +603,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 73px;
-  height: 155px;
+  height: 150px;
 
   border-top: 1px solid #e5e5e5;
 }
