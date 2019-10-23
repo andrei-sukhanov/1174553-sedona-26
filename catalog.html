@@ -81,52 +81,81 @@
         </form>
     </section>
     <section class="filter">
-        <h2>Найдено: <span>3</span> </h2>
-        <p>Сортировка:</p>
-        <ul>
-            <li class="filter_item"><a href="#" class="filter_lable active">По цене</a></li>
-            <li class="filter_item"><a href="#" class="filter_lable">По типу</a></li>
-            <li class="filter_item"><a href="#" class="filter_lable">По рейтингу</a> </li>
-        </ul>
-        <ul>
-            <li class="filter_item"><a href="#" aria-label="по убыванию"></a></li>
-            <li class="filter_item"><a href="#" aria-label="по возрастанию"></a></li>
+        <div class="wrapper_sort">
+            <h2>Найдено: <span>3</span> </h2>
+            <p>Сортировка:</p>
+            <ul class="list_filter">
+                <li class="filter_item  type_padding"><a href="#" class="filter_lable active">По цене</a></li>
+                <li class="filter_item  type_padding"><a href="#" class="filter_lable">По типу</a></li>
+                <li class="filter_item"><a href="#" class="filter_lable">По рейтингу</a> </li>
+            </ul>
+        </div>
+        <ul class="list_filter">
+            <li class="filter_item arrow_padding"><a href="#" aria-label="по убыванию"><img src="img/icon-down-dir.svg" alt="arrow_down"></a></li>
+            <li class="filter_item"><a href="#" aria-label="по возрастанию"><img src="img/icon-up-dir.svg" alt="arrow_up"></a></li>
         </ul>
     </section>
     <section class="filter_result">
-      <ul>
-        <li>
-            <img src="img/spa_amara.jpg" alt="Спа и ресторан амара" height="90" width="135">
-            <a class="label">Amara resort & spa </a>
-            <p>гостиница от 4000р</p>
-            <a href="#" class="btn_blue"> подробнее</a>
-            <a href="#" class="btn_brown reservation"> забронировать</a>
-            <div>
-              <span>7 Звёзды</span>
-              <p class="rating">Рейтинг 6</p>
+      <ul class="list_hotels">
+        <li class="item_hotel">
+            <div class="wrapper_info">
+                <img src="img/spa_amara.jpg" alt="Спа и ресторан амара" height="90" width="135">
+                <ul class="list_info_hotel">
+                    <li class="item_info_hotel"><a class="label">Amara resort & spa </a></li>
+                    <li class="item_info_hotel">
+                        <p class="hotel_type">гостиница</p>
+                        <p class="hotel_cost">от 4000р</p>
+                    </li>
+                    <li class="item_info_hotel">
+                        <a href="#" class="btn_blue more"> подробнее</a>
+                        <a href="#" class="btn_brown reservation"> забронировать</a>
+                    </li>
+                </ul>
             </div>
+            <ul class="list_rating_hotel">
+              <li><span>7 Звёзды</span></li>
+              <li><p class="rating">Рейтинг 6</p></li>
+            </ul>
         </li>
-        <li>
-            <img src="img/desert_quail.jpg" alt="Пустыня перепелки" height="90" width="135">
-            <a class="label"> Desert Quail inn </a>
-            <p>Мотель от 3000р</p>
-            <a href="#" class="btn_blue"> подробнее</a>
-            <a href="#" class="btn_brown reservation"> забронировать</a>
-            <div>
-              <span>3 Звёзды</span>
-              <p class="rating">Рейтинг 4.5</p>
+        <li class="item_hotel">
+            <div class="wrapper_info">
+                <img src="img/desert_quail.jpg" alt="Пустыня перепелки" height="90" width="135">
+                <ul class="list_info_hotel">
+                    <li class="item_info_hotel"><a class="label">Desert Quail inn </a></li>
+                    <li class="item_info_hotel">
+                        <p class="hotel_type">Мотель</p>
+                        <p class="hotel_cost">от 3000р</p>
+                    </li>
+                    <li class="item_info_hotel">
+                        <a href="#" class="btn_blue more"> подробнее</a>
+                        <a href="#" class="btn_brown reservation"> забронировать</a>
+                    </li>
+                </ul>
             </div>
+            <ul class="list_rating_hotel">
+                <li><span>3 Звёзды</span></li>
+                <li><p class="rating">Рейтинг 4.5</p></li>
+            </ul>
         </li>
-        <li>
-            <img src="img/villas_at_diablo.jpg" alt="Вилла дьявола" height="90" width="135">
-            <a class="label">Villas at poco diablo</a>
-            <p>Апартаменты от 2000р</p>
-            <a href="#" class="btn_blue"> подробнее</a>
-            <a href="#" class="btn_brown reservation"> забронировать</a>
-            <div>
-              <span>4 Звёзды </span>
-              <p class="rating">Рейтинг 8.5</p>
+        <li class="item_hotel">
+            <div class="wrapper_info">
+                <img src="img/villas_at_diablo.jpg" alt="Вилла дьявола" height="90" width="135">
+                <ul class="list_info_hotel">
+                    <li class="item_info_hotel"><a class="label">Villas at poco diablo</a></li>
+                    <li class="item_info_hotel">
+                        <p class="hotel_type">Апартаменты</p>
+                        <p class="hotel_cost">от 2000р</p>
+                    </li>
+                    <li class="item_info_hotel">
+                        <a href="#" class="btn_blue more"> подробнее</a>
+                        <a href="#" class="btn_brown reservation"> забронировать</a>
+                    </li>
+                </ul>
             </div>
+            <ul class="list_rating_hotel">
+                <li><span>4 Звёзды</span></li>
+                <li><p class="rating">Рейтинг 8.5</p></li>
+            </ul>
         </li>
      </ul>
     </section>
