@@ -183,6 +183,9 @@ a {
 .feature_title {
   font-size: 21px;
   color: #000000;
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 22px;
 }
 
 .block_blue {
@@ -191,15 +194,19 @@ a {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 450px;
   height: 256px;
+  padding: 0px;
+  padding-top: 34px;
+  padding-bottom: 14px;
 
   background-color: #81b3d2;
 }
 
 .block_blue .feature_title{
   color: #ffffff;
+  margin-bottom: 27px;
+  margin-top: 12px;
 }
 
 .icon-1::before {
@@ -235,16 +242,19 @@ a {
 
 .feature_list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 73px;
-  padding-right: 73px;
+  padding-left: 0px;
+  padding-top: 47px;
+  padding-right: 45px;
   height: 330px;
 }
 
 .bg_grey {
   background-color: #eeeeee;
-  height: 260px;
+  height: 256px;
+  padding: 0px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 10px;
 }
 
 .feature_list .atribut {
@@ -292,6 +302,7 @@ a {
   font-size: 30px;
   color: #000000;
   margin: 0px;
+  margin-bottom: 37px;
 }
 
 /* Форма */
@@ -350,11 +361,14 @@ a {
   font-weight: bold;
   font-size: 14px;
   color: #000000;
+
+  padding-left: 2px;
 }
 
 .filling_out {
   flex-grow: 1;
   min-width: 0px;
+  padding-left: 13px;
 
   font: inherit;
   font-weight: bold;
