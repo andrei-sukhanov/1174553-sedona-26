@@ -10,17 +10,17 @@
     <div class="container">
     <header>
         <nav class="navigation">
-            <div class="logo">
-            <a href="index.html" aria-label="Главная страница">
-                <img src="img/logo-sedona.svg" alt="Логотип Sedona" width="140" height="71">
-            </a>
-            </div>
-            <ul class="navigation_list">
-                <li class="navigation_item"><a href="#" class="label">Информация</a></li>
-                <li class="navigation_item"><a href="#" class="label">Фото и Видео</a></li>
-                <li class="navigation_item"><a href="#" class="label">Карта штата</a></li>
-                <li class="navigation_item"><a href="catalog.html" class="active">Гостиницы</a></li>
-            </ul>
+          <a href="index.html" aria-label="Главная страница" class="logo">
+              <img src="img/logo-sedona.svg" alt="Логотип Sedona" width="140" height="71">
+          </a>
+          <ul class="navigation_list">
+              <li class="navigation_item"><a href="#" class="label">Информация</a></li>
+              <li class="navigation_item"><a href="#" class="label">Фото и Видео</a></li>
+          </ul>
+          <ul class="navigation_list">
+              <li class="navigation_item"><a href="#" class="label">Карта штата</a></li>
+              <li class="navigation_item"><a href="catalog.html" class="label active">Гостиницы</a></li>
+          </ul>
         </nav>
     </header>
     <section>
@@ -80,7 +80,7 @@
                 </fieldset>
             </div>
             <fieldset class="input_group cost">
-                <legend class="title_input title_cost">Стоимость сутки(Р)</legend>
+                <legend class="title_input title_cost">Стоимость в сутки (Р):</legend>
                 <ul class="list_search">
                     <li class="input_cost">
                         <label for="min_cost" class="label_input">от</label><input type="text" id="min_cost" readonly>

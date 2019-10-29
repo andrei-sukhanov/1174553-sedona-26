@@ -27,14 +27,14 @@ input[type=number]::-webkit-outer-spin-button {
 .block_cheskbox {
   display: flex;
   justify-content: space-between;
-  width: 365px;
+  width: 390px;
 }
 
 .input_group {
   border: none;
   padding: 0px;
   margin: 0px;
-  height: 160px;
+  height: 181px;
 }
 
 .input_group.cost {
@@ -135,6 +135,7 @@ a {
 
 .text_padding {
   padding: 20px;
+  padding-top: 98px;
 }
 
 .navigation_list {
@@ -212,8 +213,12 @@ a {
 .icon-1::before {
   content: "";
   display: inline-block;
+  left: 50%;
+  top: 13px;
+  margin-left: -37px;
   width: 75px;
   height: 72px;
+  position: absolute;
 
   background-image: url(../img/icon-1.svg);
 }
@@ -221,19 +226,26 @@ a {
 .icon-3::before {
   content: "";
   display: inline-block;
+  left: 50%;
+  top: 13px;
+  margin-left: -37px;
   width: 74px;
   height: 70px;
+  position: absolute;
 
   background-image: url(../img/icon-3.svg);
 }
 
 .icon-2::before {
   content: "";
-  display: inline-block;
   width: 64px;
+  left: 50%;
+  top: 13px;
+  margin-left: -32px;
+  position: absolute;
   height: 76px;
 
-  background-image: url(../img/icon-2.svg);
+  background-image: url(../img/icon-2.svg)
 }
 
 .atribut_row1 {
@@ -242,10 +254,7 @@ a {
 
 .feature_list {
   display: flex;
-  padding-left: 0px;
-  padding-top: 47px;
-  padding-right: 45px;
-  height: 330px;
+  padding: 47px 0;
 }
 
 .bg_grey {
@@ -258,7 +267,17 @@ a {
 }
 
 .feature_list .atribut {
+  position: relative;
   text-align: center;
+  width: 33.3%;
+}
+
+.bg_grey .text_padding {
+  padding-top: 20px;
+}
+
+.bg_grey p {
+  margin-top: 22px;
 }
 
 .poster {
@@ -312,7 +331,7 @@ a {
   flex-direction: column;
   align-items: center;
   width: 1200px;
-  height: 476px;
+  height: 473px;
 
   background-image: url(../img/map.jpg);
 }
@@ -334,12 +353,20 @@ a {
 }
 
 .input_group_order {
-  position: relative;
-
   border: 0;
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 458px;
+  padding-bottom: 30px;
+}
+
+.input_group_number {
+  border: 0;
+
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   width: 458px;
   padding-bottom: 30px;
@@ -396,6 +423,8 @@ a {
 }
 
 .input_btn {
+  padding: 0px;
+  padding-right: 9px;
   border: none;
   background-color: #f2f2f2;
 }
@@ -549,7 +578,8 @@ a {
 }
 
 .title_input {
-  padding-bottom: 30px;
+  padding-top: 7px;
+  padding-bottom: 25px;
 
   font-size: 16px;
   font-weight: bold;
@@ -558,6 +588,7 @@ a {
 
 .title_cost {
   padding-bottom: 15px;
+  padding-left: 38px;
 }
 
 .list_search {
@@ -581,7 +612,7 @@ a {
   display: block;
   width: 26px;
   height: 23px;
-  margin-right: 10px;
+  margin-right: 13px;
 
   background-repeat: no-repeat;
   background-image: url(../img/checkbox-off.svg);
@@ -628,11 +659,12 @@ a {
   position: absolute;
   bottom: 0;
   left: 50%;
-  margin-left: -66px;
-  width: 132px;
-  height: 32px;
+  margin-left: -56px;
+  margin-bottom: 15px;
+  width: 137px;
+  height: 37px;
 
-  font-size: 14px;
+  font-size: 17px;
   color: #fff;
 
   background: none;
@@ -758,7 +790,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 73px;
-  height: 150px;
+  height: 151px;
 
   border-top: 1px solid #e5e5e5;
 }
@@ -770,7 +802,7 @@ a {
 .wrapper_info {
   display: flex;
   justify-content: space-between;
-  width: 425px;
+  width: 423px;
 }
 
 .list_info_hotel {
@@ -791,7 +823,8 @@ a {
 }
 
 .hotel_type {
-  margin-right: 40px;
+  margin-right: 5px;
+  width: 110px;
 }
 
 .btn_blue.more,
@@ -833,14 +866,18 @@ a {
 
 .star_4 {
   width: 90px;
+  margin-bottom: 50px;
+  margin-right: -6px;
 }
 
 .star_3 {
   width: 66px;
+  margin-bottom: 50px;
 }
 
 .star_2 {
   width: 41px;
+  margin-bottom: 50px;
 }
 
 .rating {
