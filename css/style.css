@@ -365,6 +365,10 @@ a {
   padding-left: 2px;
 }
 
+.input_group_order:last-child {
+  padding-left: 20px;
+}
+
 .filling_out {
   flex-grow: 1;
   min-width: 0px;
@@ -373,6 +377,19 @@ a {
   font: inherit;
   font-weight: bold;
   text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.number_people {
+  flex-grow: 1;
+  min-width: 0px;
+
+  font: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 
   background-color: #f2f2f2;
   border: none;
@@ -391,6 +408,19 @@ a {
   width: 38px;
   border: 0;
   background-color: #f2f2f2;
+
+  padding: 0px;
+  padding-right: 13px;
+}
+
+.first-child {
+  width: 38px;
+  border: 0;
+  background-color: #f2f2f2;
+
+  padding: 0px;
+  padding-bottom: 8px;
+  padding-left: 15px;
 }
 
 .btn_number:first-child svg {
