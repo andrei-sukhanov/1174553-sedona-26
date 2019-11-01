@@ -19,7 +19,7 @@
           </ul>
           <ul class="navigation_list">
               <li class="navigation_item"><a href="#" class="label">Карта штата</a></li>
-              <li class="navigation_item"><a href="catalog.html" class="label active">Гостиницы</a></li>
+              <li class="navigation_item"><a class="label active">Гостиницы</a></li>
           </ul>
         </nav>
     </header>
@@ -43,7 +43,7 @@
                                 <span>Парковка</span>
                             </label>
                         </li>
-                        <li>
+                        <li class="input_search">
                             <label for="wifi" class="label_input check">
                                 <input type="checkbox" class="checkbox_input" id="wifi" name="comfort" value="wifi">
                                 <span class="checkbox"></span>
@@ -69,7 +69,7 @@
                                 <span>Мотель</span>
                             </label>
                         </li>
-                        <li>
+                        <li class="input_search">
                             <label for="apartaments" class="label_input check">
                                 <input type="checkbox" class="checkbox_input" id="apartaments" name="type_of_housing" value="apartaments" checked>
                                 <span class="checkbox"></span>
@@ -114,39 +114,37 @@
     <section class="filter_result">
       <ul class="list_hotels">
         <li class="item_hotel">
-            <div class="wrapper_info">
-                <img src="img/spa_amara.jpg" alt="Спа и ресторан амара" height="90" width="135">
-                <ul class="list_info_hotel">
-                    <li class="item_info_hotel"><a class="label">Amara resort & spa </a></li>
-                    <li class="item_info_hotel">
-                        <p class="hotel_type">гостиница</p>
-                        <p class="hotel_cost">от 4000р</p>
-                    </li>
-                    <li class="item_info_hotel">
-                        <a href="#" class="btn_blue more"> подробнее</a>
-                        <a href="#" class="btn_brown reservation"> забронировать</a>
-                    </li>
-                </ul>
-            </div>
+            <div class="block_info_hotel">
+                    <img src="img/spa_amara.jpg" alt="Вилла дьявола" height="90" width="135">
+                    <div class="list_info_hotel">
+                        <a class="label"><h3>Amara resort & spa</h3></a>
+                            <div class="wrapper_info">
+                                <p class="hotel_type">гостиница</p>
+                                <p class="hotel_cost">от 4000 р</p>
+                            
+                                <a href="#" class="btn_blue more"> подробнее</a>
+                                <a href="#" class="btn_brown reservation"> забронировать</a>
+                            </div>
+                    </div>
+                </div>
             <ul class="list_rating_hotel">
               <li class="star star_4"><span class="visually-hidden">4 Звёзды</span></li>
               <li><p class="rating">Рейтинг 8.5</p></li>
             </ul>
         </li>
         <li class="item_hotel">
-            <div class="wrapper_info">
-                <img src="img/desert_quail.jpg" alt="Пустыня перепелки" height="90" width="135">
-                <ul class="list_info_hotel">
-                    <li class="item_info_hotel"><a class="label">Desert Quail inn </a></li>
-                    <li class="item_info_hotel">
-                        <p class="hotel_type">Мотель</p>
-                        <p class="hotel_cost">от 3000р</p>
-                    </li>
-                    <li class="item_info_hotel">
-                        <a href="#" class="btn_blue more"> подробнее</a>
-                        <a href="#" class="btn_brown reservation"> забронировать</a>
-                    </li>
-                </ul>
+            <div class="block_info_hotel">
+                <img src="img/desert_quail.jpg" alt="Вилла дьявола" height="90" width="135">
+                <div class="list_info_hotel">
+                    <a class="label"><h3>Desert Quail inn</h3> </a>
+                        <div class="wrapper_info">
+                            <p class="hotel_type">Мотель</p>
+                            <p class="hotel_cost">от 3000 р</p>
+                        
+                            <a href="#" class="btn_blue more"> подробнее</a>
+                            <a href="#" class="btn_brown reservation"> забронировать</a>
+                        </div>
+                </div>
             </div>
             <ul class="list_rating_hotel">
                 <li class="star star_3"><span class="visually-hidden">3 Звёзды</span></li>
@@ -154,24 +152,23 @@
             </ul>
         </li>
         <li class="item_hotel">
-            <div class="wrapper_info">
+            <div class="block_info_hotel">
                 <img src="img/villas_at_diablo.jpg" alt="Вилла дьявола" height="90" width="135">
-                <ul class="list_info_hotel">
-                    <li class="item_info_hotel"><a class="label">Villas at poco diablo</a></li>
-                    <li class="item_info_hotel">
-                        <p class="hotel_type">Апартаменты</p>
-                        <p class="hotel_cost">от 2000р</p>
-                    </li>
-                    <li class="item_info_hotel">
-                        <a href="#" class="btn_blue more"> подробнее</a>
-                        <a href="#" class="btn_brown reservation"> забронировать</a>
-                    </li>
-                </ul>
+                <div class="list_info_hotel">
+                    <a class="label"><h3>Villas at poco diablo</h3></a>
+                        <div class="wrapper_info">
+                            <p class="hotel_type">Апартаменты</p>
+                            <p class="hotel_cost">от 2000 р</p>
+                        
+                            <a href="#" class="btn_blue more"> подробнее</a>
+                            <a href="#" class="btn_brown reservation"> забронировать</a>
+                        </div>
+                </div>
             </div>
-            <ul class="list_rating_hotel">
-                <li class="star star_2"><span class="visually-hidden">2 Звёзды</span></li>
-                <li><p class="rating">Рейтинг 9.2</p></li>
-            </ul>
+            <div class="list_rating_hotel">
+                <div class="star star_2"><span class="visually-hidden">2 Звёзды</span></div>
+                <div><p class="rating">Рейтинг 9.2</p></div>
+            </div>
         </li>
      </ul>
     </section>
