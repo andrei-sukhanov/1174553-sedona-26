@@ -57,10 +57,13 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header::before {
+  content: "";
+
   position: absolute;
   z-index: 1000;
   bottom: 0;
 
+  margin-bottom: -2px;
   width: 1200px;
   height: 59px;
 
@@ -173,6 +176,7 @@ a {
 .logo {
   position: absolute;
   left: 50%;
+  top: 0;
   margin-left: -70px;
 }
 
@@ -222,6 +226,10 @@ a {
   padding-bottom: 14px;
 
   background-color: #81b3d2;
+}
+
+.block_blue.text_padding p {
+  margin-top: 20px;
 }
 
 .block_blue .feature_title{
@@ -297,7 +305,7 @@ a {
 }
 
 .bg_grey .text_padding {
-  padding-top: 20px;
+  padding: 20px 60px;
 }
 
 .bg_grey p {
@@ -332,6 +340,8 @@ a {
   color: #000000;
   line-height: 26px;
   text-align: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
 /* обратная связь */
@@ -373,8 +383,14 @@ a {
   height: 395px;
   align-items: center;
   padding-top: 55px;
+  animation: slide-in-top 0.5s;
 
   background-color: #ffffff;
+}
+
+.toggle {
+  display: none;
+
 }
 
 .input_group_order {
@@ -464,22 +480,17 @@ a {
   background-color: #f2f2f2;
 
   padding: 0px;
-  padding-right: 13px;
 }
 
-.first-child {
-  width: 38px;
-  border: 0;
-  background-color: #f2f2f2;
-
-  padding: 0px;
+.number button:first-child {
   padding-bottom: 8px;
   padding-left: 15px;
 }
 
-.btn_number:first-child svg {
-  margin-bottom: 2px;
+.number button:last-child {
+  padding-right: 13px
 }
+
 
 .btn_brown.btn_search {
   font: inherit;
@@ -500,36 +511,27 @@ a {
 
 
 
-/* Для SVG кнопок + - и календаря
 
-.+:hover svg,
-.+:hover path {
-  fill: #000000;
-
-.+:active svg,
-.+:active path {
-  fill: #81b3d2;
-}
-
-.-:hover svg,
-.-:hover path {
-  fill: #000000;
-
-.-:active svg,
-.-:active path {
-  fill: #81b3d2;
-}
-
-.calendar:hover svg,
-.calendar:hover path {
+.btn_number:hover svg,
+.btn_number:hover path {
   fill: #000000;
 }
 
-.calendar:hover svg,
-.calendar:hover path {
+.btn_number:active svg,
+.btn_number:active path {
   fill: #81b3d2;
 }
-*/
+
+.input_btn:hover svg,
+.input_btn:hover path {
+  fill: #000000;
+}
+
+.input_btn:active svg,
+.input_btn:active path {
+  fill: #81b3d2;
+}
+
 
 
 .btn_blue.find {
@@ -631,6 +633,21 @@ a {
   background-image: url(../img/header_blur.jpg);
   background-color: #4c6568;
   background-repeat: no-repeat;
+}
+
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .form_search li {
@@ -1034,6 +1051,10 @@ a {
   min-width: 424px;
 }
 
+.block_info_hotel .label {
+  line-height: 14px;
+}
+
 .list_info_hotel {
   display: flex;
   flex-direction: column;
@@ -1097,26 +1118,23 @@ a {
 
 .star {
   height: 41px;
+  margin-bottom: 47px;
 
-  background-repeat: repeat-x;
-  background-position: left center;
+  background-repeat: space;
+  background-position: right center;
   background-image: url(../img/star.svg);
 }
 
 .star_4 {
-  width: 90px;
-  margin-bottom: 50px;
-  margin-right: -6px;
+  width: 87px;
 }
 
 .star_3 {
-  width: 66px;
-  margin-bottom: 50px;
+  width: 63px;
 }
 
 .star_2 {
   width: 41px;
-  margin-bottom: 50px;
 }
 
 .rating {
@@ -1124,8 +1142,10 @@ a {
   justify-content: center;
   align-items: center;
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   margin: 0;
 
   background-color: #f2f2f2;
 }
+
+
