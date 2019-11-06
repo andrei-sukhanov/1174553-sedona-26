@@ -198,6 +198,7 @@ a {
   text-align: right;
 }
 
+
 .logo {
   position: absolute;
   left: 50%;
@@ -434,9 +435,6 @@ a {
 .order_hotel {
   position: absolute;
   margin-top: -86px;
-  top: 0;
-  left: 50%;
-  margin-left: -284px;
 }
 
 .form_order {
@@ -506,6 +504,8 @@ a {
   width: 346px;
   height: 38px;
 }
+
+
 
 .number {
   display: -webkit-box;
@@ -602,6 +602,7 @@ a {
 .number button:last-child {
   padding-right: 13px
 }
+
 
 .btn_brown.btn_search {
   font: inherit;
@@ -972,31 +973,26 @@ a {
   border: none;
   color: #ffffff;
   text-transform: uppercase;
-  }
-<<<<<<< HEAD
-=======
-
->>>>>>> ac236be96aae4aef503e40c5fef6c0951bc3c646
+}
 
 .filter-range ul {
-
   position: relative;
   padding: 0;
-  }
+}
 
-  .filter-range li {
+.filter-range li {
   padding-left: 3px;
-  }
+}
 
-  .filter-range-title {
+.filter-range-title {
   margin-bottom: 9px;
 
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
-  }
+}
 
-  .price-controls {
+.price-controls {
   position: relative;
 
   height: 36px;
@@ -1007,9 +1003,9 @@ a {
 
   border: 2px solid #ffffff;
   border-radius: 2px;
-  }
+}
 
-  .price-controls::after {
+.price-controls::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1019,14 +1015,11 @@ a {
   height: 22px;
 
   background: #ffffff;
-
   -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-
-  .price-controls label {
+.price-controls label {
   display: inline-block;
 
   vertical-align: top;
@@ -1035,31 +1028,26 @@ a {
   vertical-align: top;
 
   cursor: pointer;
-  }
+}
 
-  .price-controls .min-price,
-  .price-controls .max-price {
+.price-controls .min-price,
+.price-controls .max-price {
   width: 90px;
 }
 
-
-<<<<<<< HEAD
 .min-price {
-=======
-  .min-price {
->>>>>>> ac236be96aae4aef503e40c5fef6c0951bc3c646
   position: absolute;
   left: 65px;
   bottom: 5px;
-  }
+}
 
-  .max-price {
+.max-price {
   position: absolute;
   right: 10px;
   bottom: 5px;
-  }
+}
 
-  .price-controls input {
+.price-controls input {
   width: 50px;
   margin: 0;
 
@@ -1068,28 +1056,28 @@ a {
 
   background: none;
   border: none;
-  }
+}
 
-  .range-controls {
+.range-controls {
   position: relative;
 
   margin-bottom: 32px;
-  }
+}
 
-  .range-controls .scale {
+.range-controls .scale {
   height: 2px;
 
   background: rgba(255, 255, 255, 0.3);
-  }
+}
 
-  .range-controls .bar {
+.range-controls .bar {
   width: 80%;
   height: 2px;
 
   background: #ffffff;
-  }
+}
 
-  .range-toggle {
+.range-toggle {
   position: absolute;
   top: -9px;
 
@@ -1102,68 +1090,53 @@ a {
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
           box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
-  }
-
-
+}
 
 .range-toggle:hover {
   -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-      transform: scale(1.1)
+          transform: scale(1.1)
 }
 
-<<<<<<< HEAD
-
 .range-toggle-min {
-    left: 0;
+  left: 0;
 }
 
 .range-toggle-max {
-    left: 80%;
+  left: 80%;
 }
-=======
 
-  .range-toggle-min {
-    left: 0;
-  }
->>>>>>> ac236be96aae4aef503e40c5fef6c0951bc3c646
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
 
-  .range-toggle-max {
-    left: 80%;
-  }
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
 
-  .btn-transparent {
-    display: block;
-    margin: 0 auto;
-    padding: 6px 35px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
 
-    font-size: 14px;
-    line-height: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
+.btn-transparent:hover {
+  color: #000000;
 
-    background: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    cursor: pointer;
-  }
-
-  .btn-transparent:hover {
-    color: #000000;
-
-    background: #ffffff;
-  }
+  background: #ffffff;
+}
 
 
 .list_filter {
-  display: -webkit-box;
+  display: -webkit-box; 
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
   min-height: 20px;
-  min-width: 240px;
+  width: 240px;
 }
 
 .list_dir {
@@ -1384,9 +1357,9 @@ a {
 
 .star {
   height: 41px;
-  /*margin-bottom: 47px;*/
+  margin-bottom: 47px;
 
-  background-repeat: space no-repeat;
+  background-repeat: space;
   background-position: right center;
   background-image: url(../img/star.svg);
 }
