@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/style-min.css" type="text/css">
 </head>
 
 <body>
@@ -19,8 +19,6 @@
         <ul class="navigation_list">
           <li class="navigation_item"><a href="#" class="label">Информация</a></li>
           <li class="navigation_item"><a href="#" class="label">Фото и Видео</a></li>
-        </ul>
-        <ul class="navigation_list">
           <li class="navigation_item"><a href="#" class="label">Карта штата</a></li>
           <li class="navigation_item"><a href="catalog.html" class="label">Гостиницы</a></li>
         </ul>
@@ -66,7 +64,7 @@
           <li class="atribut atribut_row1">
             <img src="img/diablo.jpg" alt="Мост дьявола" height="256" width="800">
             <div class="block_blue text_padding">
-              <h3 class="feature_title">Там есть <br>мост дьявола</h3>
+              <h3 class="feature_title">Там есть мост дьявола</h3>
               <span>— №2 —</span>
               <p>Да, по нему можно пройти! если конечно вы&nbsp;осмелитесь</p>
             </div>
@@ -74,17 +72,17 @@
           <li class="atribut">
             <ul class="feature_list bg_grey">
               <li class="atribut text_padding">
-                <h3 class="feature_title">Небольшая <br>площадь</h3>
+                <h3 class="feature_title">Небольшая площадь</h3>
                 <span>— №3 —</span>
                 <p>Все достопримечателности находятся&nbsp;очень&nbsp;близко</p>
               </li>
               <li class="atribut text_padding">
-                <h3 class="feature_title">Красивая <br>дорога</h3>
+                <h3 class="feature_title">Красивая дорога</h3>
                 <span>— №4 —</span>
                 <p>Ехать в Седону из лас-вегаса совсем не скучно</p>
               </li>
               <li class="atribut text_padding">
-                <h3 class="feature_title">Мало <br>туристов</h3>
+                <h3 class="feature_title">Мало туристов</h3>
                 <span>— №5 —</span>
                 <p>Большинство едет в Гранд каньон и&nbsp;толпится&nbsp;там</p>
               </li>
@@ -101,12 +99,11 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6003.529896228282!2d-111.76513390829419!3d34.87009778497178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1572891914390!5m2!1sru!2sru" width="1200" height="473" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           <div class="order_hotel">
             <button type="button" class="btn_brown btn_search">Поиск гостиницы в седоне</button>
-            <form action="https://echo.htmlacademy.ru/" method="POST" class="form_order toggle">
+            <form action="https://echo.htmlacademy.ru/" method="POST" class="form_order">
               <div class="input_group_order firer">
                 <label for="data-visit" class="points">Дата Заезда:</label>
                 <div class="input_data">
-                  <input type="text" id="data-visit" data-visit name="data-visit" placeholder="24 АПРЕЛЯ 2017"
-                    class="filling_out">
+                  <input type="text" id="data-visit" data-visit name="data-visit" placeholder="24 АПРЕЛЯ 2017" class="filling_out" required>
                   <button type="button" class="input_btn" aria-label="календарь"><svg xmlns="http://www.w3.org/2000/svg"
                       width="21" height="22" viewBox="0 0 21 22">
                       <path
@@ -119,8 +116,7 @@
               <div class="input_group_order">
                 <label for="data-departure" class="points">Дата Выезда:</label>
                 <div class="input_data">
-                  <input type="text" id="data-departure" name="data-departure" placeholder="4 ИЮНЯ 2017"
-                    class="filling_out">
+                  <input type="text" id="data-departure" name="data-departure" placeholder="4 ИЮНЯ 2017" class="filling_out" required>
                   <button type="button" class="input_btn" aria-label="календарь"><svg xmlns="http://www.w3.org/2000/svg"
                       width="21" height="22" viewBox="0 0 21 22">
                       <path
@@ -137,8 +133,7 @@
                       xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" fill="#a9a9a9"
                       viewBox="0 0 14 3">
                       <rect width="12" height="3" /></svg></button>
-                  <input type="number" step="1" min="1" value="2" id="number-adults" name="number-adults"
-                    class="number_people">
+                  <input type="number" step="1" min="1" value="2" id="number-adults" name="number-adults" class="number_people" required>
                   <button type="button" class="btn_number" aria-label="Прибавить"><svg
                       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 11 11"
                       width="11" height="11" fill="#a9a9a9">
@@ -152,7 +147,7 @@
                       viewBox="0 0 14 3">
                       <rect width="12" height="3" /></svg></button>
                   <input type="number" step="1" min="0" value="0" id="number-children" name="number-children"
-                    class="number_people">
+                    class="number_people" required>
                   <button type="button" class="btn_number" aria-label="Прибавить"><svg
                       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#a9a9a9"
                       viewBox="0 0 11 11" width="11" height="11">
@@ -193,7 +188,7 @@
           </svg></a></p>
     </footer>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script-min.js"></script>
 </body>
 
 </html>
