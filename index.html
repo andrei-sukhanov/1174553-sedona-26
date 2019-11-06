@@ -64,7 +64,7 @@
           <li class="atribut atribut_row1">
             <img src="img/diablo.jpg" alt="Мост дьявола" height="256" width="800">
             <div class="block_blue text_padding">
-              <h3 class="feature_title">Там есть мост дьявола</h3>
+              <h3 class="feature_title">Там есть <br>мост дьявола</h3>
               <span>— №2 —</span>
               <p>Да, по нему можно пройти! если конечно вы&nbsp;осмелитесь</p>
             </div>
@@ -127,32 +127,36 @@
                 </div>
               </div>
               <div class="input_group_order">
-                <label for="number-adults" class="points">Взрослые:</label>
-                <div class="number">
-                  <button type="button" class="btn_number" aria-label="Убавить"><svg xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" fill="#a9a9a9"
-                      viewBox="0 0 14 3">
-                      <rect width="12" height="3" /></svg></button>
-                  <input type="number" step="1" min="1" value="2" id="number-adults" name="number-adults" class="number_people" required>
-                  <button type="button" class="btn_number" aria-label="Прибавить"><svg
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 11 11"
-                      width="11" height="11" fill="#a9a9a9">
-                      <rect x="4" width="3" height="11" />
-                      <rect x="4" width="3" height="11" transform="translate(0 11) rotate(-90)" /></svg></button>
+                <div class="wrapper_number">
+                  <label for="number-adults" class="points">Взрослые:</label>
+                  <div class="number">
+                    <button type="button" class="btn_number" aria-label="Убавить"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" fill="#a9a9a9"
+                        viewBox="0 0 14 3">
+                        <rect width="12" height="3" /></svg></button>
+                    <input type="number" step="1" min="1" value="2" id="number-adults" name="number-adults" class="number_people" required>
+                    <button type="button" class="btn_number" aria-label="Прибавить"><svg
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 11 11"
+                        width="11" height="11" fill="#a9a9a9">
+                        <rect x="4" width="3" height="11" />
+                        <rect x="4" width="3" height="11" transform="translate(0 11) rotate(-90)" /></svg></button>
+                  </div>
                 </div>
-                <label for="number-children" class="points">Дети:</label>
-                <div class="number">
-                  <button type="button" class="btn_number" aria-label="Убавить"><svg xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" fill="#a9a9a9"
-                      viewBox="0 0 14 3">
-                      <rect width="12" height="3" /></svg></button>
-                  <input type="number" step="1" min="0" value="0" id="number-children" name="number-children"
-                    class="number_people" required>
-                  <button type="button" class="btn_number" aria-label="Прибавить"><svg
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#a9a9a9"
-                      viewBox="0 0 11 11" width="11" height="11">
-                      <rect x="4" width="3" height="11" />
-                      <rect x="4" width="3" height="11" transform="translate(0 11) rotate(-90)" /></svg></button>
+                <div class="wrapper_number">
+                  <label for="number-children" class="points">Дети:</label>
+                  <div class="number">
+                    <button type="button" class="btn_number" aria-label="Убавить"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" fill="#a9a9a9"
+                        viewBox="0 0 14 3">
+                        <rect width="12" height="3" /></svg></button>
+                    <input type="number" step="1" min="0" value="0" id="number-children" name="number-children"
+                      class="number_people" required>
+                    <button type="button" class="btn_number" aria-label="Прибавить"><svg
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#a9a9a9"
+                        viewBox="0 0 11 11" width="11" height="11">
+                        <rect x="4" width="3" height="11" />
+                        <rect x="4" width="3" height="11" transform="translate(0 11) rotate(-90)" /></svg></button>
+                  </div>
                 </div>
               </div>
               <button type="submit" class="btn_blue find">НАЙТИ</button>

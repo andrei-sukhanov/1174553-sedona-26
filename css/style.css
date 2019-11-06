@@ -114,7 +114,7 @@ a {
 }
 
 .label:active {
-  color: #b2b2b2;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* синяя кнопка */
@@ -191,11 +191,15 @@ a {
 .navigation_item {
   text-align: left;
   list-style: none;
-  width: 25%;
+  width: 240px;
 }
 
-.navigation_item:nth-child(n+3){
+.navigation_item:nth-child(n+3) {
   text-align: right;
+}
+
+.navigation_item:nth-child(3) {
+  margin-left: 90px;
 }
 
 
@@ -264,7 +268,7 @@ a {
   margin-top: 20px;
 }
 
-.block_blue .feature_title{
+.block_blue .feature_title {
   color: #ffffff;
   margin-bottom: 27px;
   margin-top: 12px;
@@ -435,6 +439,9 @@ a {
 .order_hotel {
   position: absolute;
   margin-top: -86px;
+  top: 0;
+  left: 50%;
+  margin-left: -284px;
 }
 
 .form_order {
@@ -477,6 +484,23 @@ a {
           align-items: center;
   width: 458px;
   padding-bottom: 30px;
+}
+
+.wrapper_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 225px;
+}
+
+.wrapper_number:nth-child(2n) {
+  padding-left: 45px;
 }
 
 .input_group_number {
@@ -564,7 +588,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  min-width: 0px;
+  width: 62px;
 
   font: inherit;
   font-weight: bold;
@@ -717,7 +741,7 @@ a {
   height: 48px;
 }
 
-.btn_blue:active svg{
+.btn_blue:active svg {
   opacity: 0.3;
 }
 
@@ -944,12 +968,15 @@ a {
 
 .filter h2 {
   color: #000000;
+  margin-right: 47px;
+  min-width: 117px;
 }
 
 .filter p {
   color: #000000;
   font-weight: bold;
   font-size: 12px;
+  margin-right: 38px;
 }
 
 .wrapper_sort {
@@ -958,7 +985,7 @@ a {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -982,7 +1009,7 @@ a {
 
 .filter-range li {
   padding-left: 3px;
-}
+  }
 
 .filter-range-title {
   margin-bottom: 9px;
@@ -1016,7 +1043,7 @@ a {
 
   background: #ffffff;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -1058,13 +1085,13 @@ a {
   border: none;
 }
 
-.range-controls {
+  .range-controls {
   position: relative;
 
   margin-bottom: 32px;
 }
 
-.range-controls .scale {
+  .range-controls .scale {
   height: 2px;
 
   background: rgba(255, 255, 255, 0.3);
@@ -1094,15 +1121,15 @@ a {
 
 .range-toggle:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1)
+      transform: scale(1.1)
 }
 
 .range-toggle-min {
-  left: 0;
+    left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+    left: 80%;
 }
 
 .btn-transparent {
@@ -1129,14 +1156,17 @@ a {
 
 
 .list_filter {
-  display: -webkit-box; 
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
   min-height: 20px;
-  width: 240px;
+  min-width: 240px;
 }
 
 .list_dir {
@@ -1161,7 +1191,7 @@ a {
 }
 
 .type_padding {
-  padding-right: 33px;
+  margin-right: 33px;
 }
 
 .arrow_padding {
@@ -1359,7 +1389,7 @@ a {
   height: 41px;
   margin-bottom: 47px;
 
-  background-repeat: space;
+  background-repeat: space no-repeat;
   background-position: right center;
   background-image: url(../img/star.svg);
 }
